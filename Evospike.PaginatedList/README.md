@@ -21,7 +21,7 @@ public class ItemsController : ControllerBase
 
         var collection = await _context.Items
                             .OrderByDescending(i => i.ItemId)
-                            .GetPagedAsync(page, take);
+                            .GetPagedAsync(page, take); //EXTENSION METHOD HERE
 
         return collection;
     }
