@@ -10,6 +10,8 @@
     <Description>Add pagination that only returns a list that only contains the requested page</Description>
     <PackageId>Evospike.PaginatedList</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
+    <PackageProjectUrl>https://github.com/enmanuellopez02/Evospike.PaginatedList.git</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/enmanuellopez02/Evospike.PaginatedList/blob/master/LICENSE</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
