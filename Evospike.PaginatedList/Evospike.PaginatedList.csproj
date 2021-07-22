@@ -12,6 +12,7 @@
     <PackageVersion>1.0.0</PackageVersion>
     <PackageProjectUrl>https://github.com/enmanuellopez02/Evospike.PaginatedList.git</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/enmanuellopez02/Evospike.PaginatedList/blob/master/LICENSE</PackageLicenseUrl>
+    <NeutralLanguage>en-US</NeutralLanguage>
   </PropertyGroup>
 
   <ItemGroup>
