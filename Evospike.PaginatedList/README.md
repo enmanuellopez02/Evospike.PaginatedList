@@ -15,7 +15,7 @@ public class ItemsController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet]
+    [HttpGet] //RETURN A TYPE DataCollection<T>
     public async Task<DataCollection<Item>> GetAllAsync(int page = 1, int take = 50)
     {
 
