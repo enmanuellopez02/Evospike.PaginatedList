@@ -25,5 +25,14 @@ public class ItemsController : ControllerBase
 
         return collection;
     }
+
+    [HttpGet] //RETURN A TYPE DataCollection<T> | add using Evospike.PaginatedList.Models
+    public DataCollection<Item> GetAllAsync(int page = 1, int take = 50)
+    {
+        var lista = new List<string> { "test1", "test2", "test3" };
+        var collection = lista.GetPaged(page, take); //EXTENSION METHOD HERE
+
+        return collection;
+    }
 }
 ```
