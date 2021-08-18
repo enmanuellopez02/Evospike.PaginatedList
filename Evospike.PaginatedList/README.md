@@ -9,10 +9,12 @@ Example of a controller using the extension method
 public class ItemsController : ControllerBase
 {
     private readonly ILogger<ItemsController> _logger;
+    private readonly ApplicationDbContext _context;
 
-    public ItemsController(ILogger<ItemsController> logger)
+    public ItemsController(ILogger<ItemsController> logger, ApplicationDbContext context)
     {
         _logger = logger;
+        _context = context;
     }
 
     [HttpGet] //RETURN A TYPE DataCollection<T> | add using Evospike.PaginatedList.Models
@@ -26,7 +28,7 @@ public class ItemsController : ControllerBase
         return collection;
     }
 
-    [HttpGet] //RETURN A TYPE DataCollection<T> | add using Evospike.PaginatedList.Models
+    [HttpGet("test2")] //RETURN A TYPE DataCollection<T> | add using Evospike.PaginatedList.Models
     public DataCollection<Item> GetAllAsync(int page = 1, int take = 50)
     {
         var lista = new List<string> { "test1", "test2", "test3" };
